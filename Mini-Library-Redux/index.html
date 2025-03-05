@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="main-navigation">
+            <section class="container">
+                <a href="/" class="brand">Bookster</a>
+                <form id="searchForm" class="search-form">
+                    <input type="search" name="search" id="search" class="form-input">
+                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                    <button class="btn">Search</button>
+                </form>
+            </section>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="first-page-container">
+
+            <section class="section-header">
+                <h1>8 Classic Children's books</h1>
+            </section>
+
+            <section class="section-books">
+
+                <article class="article-book" id="Madeline">
+                    <figure class="figure-rectangle"></figure>
+                    <article class="article-book-info">
+                        <h3>Madeline</h3>
+                        <h4>Ludwig Bemelmans</h4>
+                    </article>
+                </article>
+                <article class="article-book" id="Rabbit">
+                    <figure class="figure-rectangle"></figure>
+                    <article class="article-book-info">
+                        <h3>The Tale of Peter Rabbit</h3>
+                        <h4>Beatrix Potter</h4>
+                    </article>
+                </article>
+                <article class="article-book" id="Charlotte">
+                    <figure class="figure-rectangle"></figure>
+                    <article class="article-book-info">
+                        <h3>Charlotte's Web</h3>
+                        <h4>E.B.White</h4>
+                    </article>
+                </article>
+                <article class="article-book" id="Harold">
+                    <figure class="figure-rectangle"></figure>
+                    <article class="article-book-info">
+                        <h3>Harold and the Purple Crayon</h3>
+                        <h4>Crockett Johnson</h4>
+                    </article>
+                </article>
+                <article class="article-book" id="Wild">
+                    <figure class="figure-rectangle"></figure>
+                    <article class="article-book-info">
+                        <h3>Where the Wild Things Are</h3>
+                        <h4>Maurice Sendak</h4>
+                    </article>
+                </article>
+                <article class="article-book" id="Goodnight">
+                    <figure class="figure-rectangle"></figure>
+                    <article class="article-book-info">
+                        <h3>Goodnight Moon</h3>
+                        <h4>Margaret Wise Brown</h4>
+                    </article>
+                </article>
+                <article class="article-book" id="Wrinkle">
+                    <figure class="figure-rectangle"></figure>
+                    <article class="article-book-info">
+                        <h3>A Wrinkle in Time</h3>
+                        <h4>Madeleine L'Engle</h4>
+                    </article>
+                </article>
+                <article class="article-book" id="Caterpillar">
+                    <figure class="figure-rectangle"></figure>
+                    <article class="article-book-info">
+                        <h3>The Very Hungry Caterpillar</h3>
+                        <h4>Eric Carle</h4>
+                    </article>
+                </article>
+
+            </section>
+
+        </article>
+
+        <article class="popup-container">
+            <!-- <figure class="figure-circle">
+                <i class="fa-solid fa-arrow-left" id="figure-arrow"></i>
+            </figure> -->
+            <section class="popup-book-container">
+                <section class="article-book" id="popup-book">
+                    <figure class="figure-rectangle"></figure>
+                    <article class="article-book-info" id="popup-article">
+                        <h2>Title</h2>
+                        <h3>Author</h3>
+                    </article>
+                </section>
+                <section class="popup-book-info">
+                    <h2>Title</h2>
+                    <h3>Author</h3>
+                    <p>Plot:</p>
+                    <section class="popup-book-details">
+                        <p>Audience: </p>
+                        <p>First pupblished: </p>
+                        <p>Pages: </p>
+                        <p>Publisher: </p>
+                    </section>
+                    <button class="btn" id="popup-btn">Oh, I want to read it!</button>
+                </section>
+            </section>
+        </article>
+    </main>
+    
+</body>
+</html>

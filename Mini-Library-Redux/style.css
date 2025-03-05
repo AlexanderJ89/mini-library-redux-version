@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    font-family: Roboto;
+}
+
+header {
+    width: 100%;
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #022a3f;
+    padding-block: 1rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn {
+    padding: 0.5em 1.5em;
+    border-radius: 0.6rem;
+    border: 1px transparent;
+    background-color: #9b8a29;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#popup-btn {
+    height: 48px;
+    width: 188px;
+    padding: 0;
+    font-size: 16px;
+}
+
+.brand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.search-form {
+    position: relative;
+}
+
+.form-input {
+    width: auto;
+    padding: .5em 2em;
+    border-radius: 0.6rem;
+    border: 1px solid #333;
+}
+
+.search-icon {
+    position: absolute;
+    left: .5em;
+    top: 50%;
+    translate: 0 -50%;
+}
+
+.first-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.article-book {
+    height: 15rem;
+    width: 12.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:flex-end;
+
+    padding-left: 0.5rem;
+    border-radius: 2px 0px 0px 0px;
+    opacity: 0px;
+    box-shadow: 0px 0px 16px 0px #00000014;
+}   
+
+.article-book-info {
+    padding: 1rem;
+}
+
+.section-header {
+    margin-top: 2rem;
+    margin-right: 21rem;
+}
+
+.section-books {
+    display: grid;
+    align-items: center;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    column-gap: 1.5rem;
+    row-gap: 2rem;
+    padding: 2rem 0;
+}
+
+#Madeline {
+    background: linear-gradient(0deg, #F2C94C, #F2C94C),
+    linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%);
+} 
+
+#TheTaleofPeterRabbit {
+    background: linear-gradient(0deg, #F2994A, #F2994A),
+    linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%);
+}
+
+#Charlotte {
+    background: linear-gradient(0deg, #EB5757, #EB5757),
+    linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%);
+}
+
+#Harold {
+    background: linear-gradient(0deg, #9B51E0, #9B51E0),
+    linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%);
+}
+
+#Wild {
+    background: linear-gradient(0deg, #56CCF2, #56CCF2),
+    linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%);    
+}
+
+#Goodnight-Moon {
+    background: linear-gradient(0deg, #2F80ED, #2F80ED),
+    linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%);
+}
+
+#AWrinkleinTime {
+    background: linear-gradient(0deg, #6FCF97, #6FCF97),
+    linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%);
+}
+
+#Caterpillar {
+    background: linear-gradient(0deg, #27AE60, #27AE60),
+    linear-gradient(208.29deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 92.13%);
+}
+
+.figure-rectangle {
+    width: 3px;
+    height: 240px;
+    top: 202px;
+    left: 520px;
+    gap: 0px;
+    opacity: 0px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 28.65%, rgba(0, 0, 0, 0.4) 67.71%, rgba(0, 0, 0, 0) 100%);
+}
+
+h1 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 53.91px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+h2 {
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 44.53px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.09px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+
+h4 {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 11.72px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFFFFE5;
+}
+
+.popup-container {
+    height: 56.25rem;
+    background-color: #232222;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* .figure-circle {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    margin-left: 18rem;
+    background-color: #8A8A8A;
+}
+
+#figure-arrow {
+    position: absolute;
+} */
+
+.popup-book-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+
+    .article-book {
+        height: 35rem;
+        width: 26rem;
+        padding-left: 1rem;
+    }
+
+    .figure-rectangle {
+        width: 5.61px;
+        height: 100%;
+    }
+}
+
+.popup-book-info {
+    height: 35rem;
+    width: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #232222;
+}
+
+.popup-book-details {
+    display: grid;
+    align-items: center;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+    background: #C4C4C414;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    border-radius: 2px 0px 0px 0px;
+}
