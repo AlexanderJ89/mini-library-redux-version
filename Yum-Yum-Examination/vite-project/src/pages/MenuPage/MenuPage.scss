@@ -1,0 +1,196 @@
+.menu-page {
+    background-color: #a8d8c7;
+    background-image: url('src/assets/background.png');
+    background-size: cover;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .loading, .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.5rem;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .error {
+    color: #d32f2f;
+  }
+  
+  .menu-container {
+    background-color: #5a5656; 
+    color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 500px;
+    margin: 0 auto;
+    overflow-y: auto; // Tillåt scrollning
+    max-height: calc(100vh - 200px); // Anpassa höjden
+
+        // Dölj scrollbar men behåll funktionaliteten
+    &::-webkit-scrollbar {
+        width: 0; // För Chrome, Safari och nyare versioner av Edge
+        display: none; // Alternativt sätt att dölja scrollbar
+    }
+    
+    // För Firefox
+    scrollbar-width: none;
+    
+    // För IE och äldre versioner av Edge
+    -ms-overflow-style: none;
+}
+    
+  .menu-title {
+    font-size: 32px;
+    margin-top: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .menu-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .menu-item {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #666060;
+    }
+  }
+  
+  .menu-item-content {
+    width: 100%;
+  }
+  
+  .menu-item-header {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+  }
+  
+  .menu-item-name {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .menu-item-dots {
+    flex-grow: 1;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+    margin: 0 0.5rem;
+    position: relative;
+    top: -0.3rem;
+  }
+  
+  .menu-item-price {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26.4px;
+    margin: 0;
+    white-space: nowrap;
+  }
+  
+  .menu-item-ingredients {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    text-align: start;
+    margin: 0.3rem 0 0;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .drink-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .dips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .dip-item {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    background-color: #4a4a4a;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #353131;
+    }
+  }
+  
+  
+
+
+
+
+
+/* Kan nästa allt in i Menu-container om jag använder SASS? */
+
+/* 
+h1 - Meny
+
+
+font-weight: 700;
+font-size: 32px;
+line-height: 38.4px;
+letter-spacing: 0%;
+
+background: #F4F3F1F0;
+box-shadow: 1px 1px 0px 0px #0000004D;
+ */
+
+ /* 
+h2 - Name of dishes and price
+ 
+font-family: Fira Sans;
+font-weight: 700;
+font-size: 22px;
+line-height: 26.4px;
+letter-spacing: 0%;
+background: #F4F3F1F0;
+*/
+
+/* 
+h4 - Ingredients + Dip sauces
+
+font-family: Fira Sans;
+font-weight: 500;
+font-size: 14px;
+line-height: 16.8px;
+letter-spacing: 0%;
+background: #F4F3F1F0;
+box-shadow: 1px 1px 2px 0px #00000066;
+*/
+
+

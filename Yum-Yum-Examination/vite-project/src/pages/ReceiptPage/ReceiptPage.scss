@@ -1,0 +1,253 @@
+.receipt-page {
+    background-color: #5a5656;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+  }
+  
+  .loading-container, .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 4px;
+    text-align: center;
+    
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  .error-container {
+    background-color: #ffebee;
+    
+    h2 {
+      color: #d32f2f;
+    }
+  }
+  
+  .loading-spinner {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #333;
+    animation: spin 1s ease-in-out infinite;
+    margin: 20px 0;
+  }
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .receipt-container {
+    max-width: 500px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .receipt-content {
+    background-color: white;
+    border-radius: 4px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .receipt-logo {
+    margin-bottom: 1rem;
+    
+    .logo-red {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+    }
+  }
+  
+  .receipt-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
+  
+  .receipt-id {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .receipt-items {
+    width: 100%;
+    margin-bottom: 1rem;
+    
+    .receipt-item {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 1.5rem;
+      width: 100%;
+      
+      .item-name-container {
+        flex: 1;
+        
+        .item-name {
+          font-size: 18px;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin: 0;
+        }
+        
+        .item-quantity {
+          font-size: 14px;
+          color: #666;
+          margin: 0.2rem 0 0 0;
+        }
+      }
+      
+      .item-dots {
+        flex-grow: 1;
+        border-bottom: 1px dotted #aaa;
+        margin: 0 0.5rem;
+        position: relative;
+        top: -0.2rem;
+      }
+      
+      .item-price {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        text-align: right;
+        min-width: 80px;
+      }
+      
+      &.empty {
+        justify-content: center;
+        color: #999;
+      }
+    }
+  }
+  
+  .receipt-total {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    .total-label {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.2px;
+      text-transform: uppercase;
+      margin: 0;
+      align-self: flex-start;
+    }
+    
+    .total-note {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14.4px;
+      color: #666;
+      margin: 0.2rem 0 0.5rem 0;
+      align-self: flex-start;
+    }
+    
+    .total-amount {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28.8px;
+      margin: 0;
+    }
+  }
+  
+ 
+/* 
+
+Kvitto
+
+font-family: Fira Sans;
+font-weight: 700;
+font-size: 24px;
+line-height: 33.6px;
+letter-spacing: 8%;
+text-align: center;
+
+span - ordernr
+
+font-family: Fira Sans;
+font-weight: 700;
+font-size: 12px;
+line-height: 16.8px;
+letter-spacing: 8%;
+text-align: center;
+
+background: #605858;
+
+*/
+
+/* 
+
+name of dishes + price
+
+font-family: Fira Sans;
+font-weight: 700;
+font-size: 16px;
+line-height: 19.2px;
+letter-spacing: 0%;
+
+background: #353131;
+
+*/
+
+/* number of dishes
+
+font-family: Fira Sans;
+font-weight: 400;
+font-size: 12px;
+line-height: 14.4px;
+letter-spacing: 0%;
+background: #353131;
+
+*/
+
+/* 
+Ruta för Totalpris (Kan göra en komponent eftersom den används på Orderpage fast utan moms och annan storlek)
+
+Summa
+
+font-family: Fira Sans;
+font-weight: 700;
+font-size: 24px;
+line-height: 28.8px;
+letter-spacing: 0%;
+background: #353131;
+
+TOTALT
+
+font-family: Fira Sans;
+font-weight: 700;
+font-size: 16px;
+line-height: 19.2px;
+letter-spacing: 0%;
+background: #353131;
+
+inkl 20% moms
+font-family: Fira Sans;
+font-weight: 400;
+font-size: 12px;
+line-height: 14.4px;
+letter-spacing: 0%;
+background: #353131;
+*/
